@@ -1,0 +1,4 @@
+repository "Memory/Memo Gallery 2026-04-15_17-58-17@6872755814527@cloud"
+  path "/"
+    br "/main"
+    co "/main"
