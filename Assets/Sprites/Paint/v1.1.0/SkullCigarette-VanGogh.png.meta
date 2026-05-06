@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 22916d54be75be746b34eae2221f7e15
+guid: 50ebf483911d38549a7deefb9de9bd5f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6908381872756905803
-    second: Memo_Gallery_icon_0
+      213: 2939646370972022009
+    second: SkullCigarette-VanGogh_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Memo_Gallery_icon_0
+      name: SkullCigarette-VanGogh_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 776
-        height: 776
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b475c6a06b08fdf50800000000000000
-      internalID: 6908381872756905803
+      spriteID: 9f4bd0bacc8bbc820800000000000000
+      internalID: 2939646370972022009
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Memo_Gallery_icon_0: 6908381872756905803
+      SkullCigarette-VanGogh_0: 2939646370972022009
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

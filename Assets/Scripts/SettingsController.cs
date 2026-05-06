@@ -29,7 +29,7 @@ public class SettingsController : MonoBehaviour
     private const string VIBRATION_KEY = "vibration";
     private const string THEME_KEY = "theme";
 
-    private readonly string VERSION = "1.0.0";
+    private readonly string VERSION = "1.1.0";
 
     private void Awake()
     {

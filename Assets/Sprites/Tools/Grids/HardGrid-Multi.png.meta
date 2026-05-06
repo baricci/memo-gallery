@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: abf9dd5b864ad244997b176921795eee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2580028154367739772
+    second: HardGrid-Multi_0
+  - first:
+      213: -8823342303913700276
+    second: HardGrid-Multi_1
+  - first:
+      213: -3125228130681841915
+    second: HardGrid-Multi_2
+  - first:
+      213: 802244783195630449
+    second: HardGrid-Multi_3
+  - first:
+      213: 1250749342589198631
+    second: HardGrid-Multi_4
+  - first:
+      213: -8568247532016869803
+    second: HardGrid-Multi_5
+  - first:
+      213: 5940929767959225486
+    second: HardGrid-Multi_6
+  - first:
+      213: -3088469454852677168
+    second: HardGrid-Multi_7
+  - first:
+      213: -6545558070774332296
+    second: HardGrid-Multi_8
+  - first:
+      213: 4650561365171262807
+    second: HardGrid-Multi_9
+  - first:
+      213: -7681390077332048124
+    second: HardGrid-Multi_10
+  - first:
+      213: -1699495990705069922
+    second: HardGrid-Multi_11
+  - first:
+      213: -2109154342751813986
+    second: HardGrid-Multi_12
+  - first:
+      213: -4946787412140809350
+    second: HardGrid-Multi_13
+  - first:
+      213: -7315727139315341572
+    second: HardGrid-Multi_14
+  - first:
+      213: 7524245710375061916
+    second: HardGrid-Multi_15
+  - first:
+      213: -8487064244340329221
+    second: HardGrid-Multi_16
+  - first:
+      213: -2812513796378215204
+    second: HardGrid-Multi_17
+  - first:
+      213: 3667838939317648684
+    second: HardGrid-Multi_18
+  - first:
+      213: 2810423885408546710
+    second: HardGrid-Multi_19
+  - first:
+      213: 8493797988664799364
+    second: HardGrid-Multi_20
+  - first:
+      213: 1748294536307006026
+    second: HardGrid-Multi_21
+  - first:
+      213: -2632463322101530080
+    second: HardGrid-Multi_22
+  - first:
+      213: 7742423008766347895
+    second: HardGrid-Multi_23
+  - first:
+      213: -5584499059516796906
+    second: HardGrid-Multi_24
+  - first:
+      213: -7173366472312916596
+    second: HardGrid-Multi_25
+  - first:
+      213: -4038397301099221569
+    second: HardGrid-Multi_26
+  - first:
+      213: 3407715336502488263
+    second: HardGrid-Multi_27
+  - first:
+      213: -5991659149614215394
+    second: HardGrid-Multi_28
+  - first:
+      213: 7851546030817163784
+    second: HardGrid-Multi_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HardGrid-Multi_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 24
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c778893dfe91ec320800000000000000
+      internalID: 2580028154367739772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c441c833ce03d8580800000000000000
+      internalID: -8823342303913700276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_2
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 24
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50796a4c295f0a4d0800000000000000
+      internalID: -3125228130681841915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b294d3165222b00800000000000000
+      internalID: 802244783195630449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_4
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721251c76ed8b5110800000000000000
+      internalID: 1250749342589198631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_5
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e54822448771980800000000000000
+      internalID: -8568247532016869803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_6
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 24
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e84e0c6c52c627250800000000000000
+      internalID: 5940929767959225486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_7
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d1acdbe46d8325d0800000000000000
+      internalID: -3088469454852677168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_8
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 24
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8740ece4d918925a0800000000000000
+      internalID: -6545558070774332296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_9
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75550310cec1a8040800000000000000
+      internalID: 4650561365171262807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_10
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 24
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407b9632c68366590800000000000000
+      internalID: -7681390077332048124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_11
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90e2d8966d2a68e0800000000000000
+      internalID: -1699495990705069922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 12
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e3ecfcc47cab2e0800000000000000
+      internalID: -2109154342751813986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_13
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7329ffce0b795bb0800000000000000
+      internalID: -4946787412140809350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_14
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 12
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6ac6b5de0597a90800000000000000
+      internalID: -7315727139315341572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_15
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9989a1cb9d7b6860800000000000000
+      internalID: 7524245710375061916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_16
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 12
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4fc224904e73a80800000000000000
+      internalID: -8487064244340329221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_17
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdcbdf08a91f7f8d0800000000000000
+      internalID: -2812513796378215204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_18
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 12
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2dbf5f0518c6e230800000000000000
+      internalID: 3667838939317648684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_19
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69fac0e22a1a00720800000000000000
+      internalID: 2810423885408546710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_20
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 12
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 480fa44c44800e570800000000000000
+      internalID: 8493797988664799364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_21
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ad55f2e90334810800000000000000
+      internalID: 1748294536307006026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_22
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 12
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022c4e15e8c977bd0800000000000000
+      internalID: -2632463322101530080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_23
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a445294bc927b60800000000000000
+      internalID: 7742423008766347895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6109ffc71bfdf72b0800000000000000
+      internalID: -5584499059516796906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_25
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8577161335137c90800000000000000
+      internalID: -7173366472312916596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_26
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbda51e0d0bb4f7c0800000000000000
+      internalID: -4038397301099221569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_27
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cca1ef2b03aa4f20800000000000000
+      internalID: 3407715336502488263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_28
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f8604afb959dca0800000000000000
+      internalID: -5991659149614215394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HardGrid-Multi_29
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a3c78048b46fc60800000000000000
+      internalID: 7851546030817163784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HardGrid-Multi_0: 2580028154367739772
+      HardGrid-Multi_1: -8823342303913700276
+      HardGrid-Multi_10: -7681390077332048124
+      HardGrid-Multi_11: -1699495990705069922
+      HardGrid-Multi_12: -2109154342751813986
+      HardGrid-Multi_13: -4946787412140809350
+      HardGrid-Multi_14: -7315727139315341572
+      HardGrid-Multi_15: 7524245710375061916
+      HardGrid-Multi_16: -8487064244340329221
+      HardGrid-Multi_17: -2812513796378215204
+      HardGrid-Multi_18: 3667838939317648684
+      HardGrid-Multi_19: 2810423885408546710
+      HardGrid-Multi_2: -3125228130681841915
+      HardGrid-Multi_20: 8493797988664799364
+      HardGrid-Multi_21: 1748294536307006026
+      HardGrid-Multi_22: -2632463322101530080
+      HardGrid-Multi_23: 7742423008766347895
+      HardGrid-Multi_24: -5584499059516796906
+      HardGrid-Multi_25: -7173366472312916596
+      HardGrid-Multi_26: -4038397301099221569
+      HardGrid-Multi_27: 3407715336502488263
+      HardGrid-Multi_28: -5991659149614215394
+      HardGrid-Multi_29: 7851546030817163784
+      HardGrid-Multi_3: 802244783195630449
+      HardGrid-Multi_4: 1250749342589198631
+      HardGrid-Multi_5: -8568247532016869803
+      HardGrid-Multi_6: 5940929767959225486
+      HardGrid-Multi_7: -3088469454852677168
+      HardGrid-Multi_8: -6545558070774332296
+      HardGrid-Multi_9: 4650561365171262807
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

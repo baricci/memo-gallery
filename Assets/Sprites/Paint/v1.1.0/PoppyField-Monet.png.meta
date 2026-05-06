@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b528a24e874d8d24d81769d7719f555a
+guid: 1f8e281a9f64af34f93e45746a6367ac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8158086918526519846
-    second: ParisStreetRainyDay-Caillebotte_0
+      213: 7764367236062676291
+    second: PoppyField-Monet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ParisStreetRainyDay-Caillebotte_0
+      name: PoppyField-Monet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 62ac88934d8573170800000000000000
-      internalID: 8158086918526519846
+      spriteID: 34582332dd290cb60800000000000000
+      internalID: 7764367236062676291
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ParisStreetRainyDay-Caillebotte_0: 8158086918526519846
+      PoppyField-Monet_0: 7764367236062676291
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

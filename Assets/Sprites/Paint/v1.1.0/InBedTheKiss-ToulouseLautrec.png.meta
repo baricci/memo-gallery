@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c0984ab6636b5c748a640a2f73b62884
+guid: d09f68aab651f1548b1807a6d1b94fd6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4248703306127651768
-    second: half_rounded_0
+      213: 5821835000999229853
+    second: InBedTheKiss-ToulouseLautrec_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: half_rounded_0
+      name: InBedTheKiss-ToulouseLautrec_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b334c5752d66fa30800000000000000
-      internalID: 4248703306127651768
+      spriteID: d99be7786105bc050800000000000000
+      internalID: 5821835000999229853
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      half_rounded_0: 4248703306127651768
+      InBedTheKiss-ToulouseLautrec_0: 5821835000999229853
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

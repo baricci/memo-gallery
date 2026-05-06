@@ -17,8 +17,28 @@ public class GameController : MonoBehaviour
     [Header("UI References")]
     public GameObject winScreen;
     public GameObject pauseScreen;
+    public GameObject multiplayerScores;
 
     [SerializeField] private Transform cardGrid;
+
+    [Header("Multiplayer")]
+    private int currentPlayer = 0;
+    private int[] scores = new int[2];
+    private GameMode currentMode;
+
+    [Header("Multiplayer UI")]
+    public GameObject[] singleplayerContainer;
+    public GameObject[] multiplayerContainer;
+
+    public TextMeshProUGUI primaryScoreText;
+    public TextMeshProUGUI secondaryScoreText;
+    public TextMeshProUGUI winnerText;
+    public TextMeshProUGUI primaryResultText;
+    public TextMeshProUGUI secondaryResultText;
+
+    public GameObject primaryTurnSelector;
+    public GameObject secondaryTurnSelector;
+    public GameObject surrenderButton;
 
     private List<Sprite> deck = new();
     private Card firstCard, secondCard;
@@ -27,6 +47,7 @@ public class GameController : MonoBehaviour
     private bool isInputLocked = false;
     private bool hasGameEnded = false;
     private Difficulty currentDifficulty;
+    private int winner = -1;
 
     [Header("Stats UI")]
     public TextMeshProUGUI timeText;
@@ -41,6 +62,7 @@ public class GameController : MonoBehaviour
     private int moves;
     private int score;
     private bool isNewRecord = false;
+    private int winCondition;
 
     private void Awake()
     {
@@ -65,23 +87,38 @@ public class GameController : MonoBehaviour
     {
         totalPairs = pairs;
 
+        if (currentMode == GameMode.Multiplayer)
+            winCondition = (totalPairs + 1) / 2;
+
         currentDifficulty = pairs switch
         {
             4 => Difficulty.Easy,
+            5 => Difficulty.Easy,
             8 => Difficulty.Medium,
+            9 => Difficulty.Medium,
             12 => Difficulty.Hard,
+            15 => Difficulty.Hard,
             16 => Difficulty.Extreme,
+            25 => Difficulty.Extreme,
             _ => Difficulty.Easy
         };
 
         CleanGrid();
+        SetupModeUI();
         deck = GenerateDeck(pairs);
         StartCoroutine(InitGrid());
     }
 
     public void ReplayGame()
     {
-        ChangeDifficulty();
+        winScreen.GetComponent<Animator>().SetTrigger("Restart");
+        if (currentMode == GameMode.Multiplayer)
+            multiplayerScores.GetComponent<Animator>().SetTrigger("Restart");
+
+        hasGameEnded = false;
+        isInputLocked = false;
+        currentPlayer = winner == -1 ? 0 : winner;
+
         SelectDifficulty(totalPairs);
 
         UIController.Instance.SetCurrentPanel(PanelType.Game);
@@ -113,7 +150,7 @@ public class GameController : MonoBehaviour
         ChangeDifficulty();
         pauseScreen.GetComponent<Animator>().SetBool("inPause", false);
 
-        UIController.Instance.SetCurrentPanel(PanelType.Menu);
+        UIController.Instance.SetCurrentPanel(PanelType.Mode);
     }
 
     private IEnumerator InitGrid()
@@ -123,6 +160,15 @@ public class GameController : MonoBehaviour
         BuildResponsiveGrid();
         GenerateCards();
         LayoutRebuilder.ForceRebuildLayoutImmediate(cardGrid.GetComponent<RectTransform>());
+
+        winScreen.GetComponent<Animator>().ResetTrigger("Restart");
+        winScreen.GetComponent<Animator>().SetInteger("WinState", 0);
+
+        if (currentMode == GameMode.Multiplayer)
+        {
+            multiplayerScores.GetComponent<Animator>().ResetTrigger("Restart");
+            multiplayerScores.GetComponent<Animator>().SetInteger("Winner", -1);
+        }
 
         elapsedTime = 0f;
         timerRunning = true;
@@ -191,6 +237,8 @@ public class GameController : MonoBehaviour
         pairsFound = 0;
         moves = 0;
         movesText.text = moves.ToString();
+        scores[0] = 0;
+        scores[1] = 0;
         newRecordLabel.SetActive(false);
     }
 
@@ -204,8 +252,11 @@ public class GameController : MonoBehaviour
         {
             secondCard = card;
             isInputLocked = true;
-            moves++;
-            movesText.text = moves.ToString();
+            if (currentMode == GameMode.Singleplayer)
+            {
+                moves++;
+                movesText.text = moves.ToString();
+            }
             StartCoroutine(CheckMatch());
         }
     }
@@ -227,18 +278,43 @@ public class GameController : MonoBehaviour
 
             pairsFound++;
 
+            if (currentMode == GameMode.Multiplayer)
+            {
+                scores[currentPlayer]++;
+                UpdateScoreUI();
+            }
+
             if (pairsFound >= totalPairs && !hasGameEnded)
             {
                 timerRunning = false;
-                score = CalculateScore();
-                CheckBestScore();
-                SaveStats();
-                UpdateStatsUI();
-
                 hasGameEnded = true;
                 isInputLocked = true;
-                yield return new WaitForSeconds(0.5f);
-                winScreen.GetComponent<Animator>().SetInteger("WinState", isNewRecord ? 2 : 1);
+
+                switch (currentMode)
+                {
+                    case GameMode.Singleplayer:
+                        score = CalculateScore();
+                        CheckBestScore();
+                        SaveStats();
+                        UpdateStatsUI();
+
+                        yield return new WaitForSeconds(0.5f);
+                        winScreen.GetComponent<Animator>().SetInteger("WinState", isNewRecord ? 2 : 1);
+                        break;
+                    case GameMode.Multiplayer:
+                        winner = scores[0] > scores[1] ? 0 : 1;
+
+                        UpdateStatsUI();
+
+                        string keyWinner = winner == 0 ? "primary_wins" : "secondary_wins";
+                        winnerText.text = LocalizationController.Instance.Get(keyWinner);
+
+                        winScreen.GetComponent<Animator>().SetInteger("WinState", 1);
+                        multiplayerScores.GetComponent<Animator>().SetInteger("Winner", winner);
+
+                        yield return new WaitForSeconds(0.5f);
+                        break;
+                }
 
                 SFXManager.Instance.PlayVictory();
                 UIController.Instance.SetCurrentPanel(PanelType.EndGame);
@@ -249,6 +325,9 @@ public class GameController : MonoBehaviour
             SFXManager.Instance.PlayMismatch();
             firstCard.Hide();
             secondCard.Hide();
+
+            if (currentMode == GameMode.Multiplayer)
+                SwitchPlayer();
         }
 
         firstCard = null;
@@ -342,6 +421,18 @@ public class GameController : MonoBehaviour
 
     private int GetMinColumns()
     {
+        if (currentMode == GameMode.Multiplayer)
+        {
+            return currentDifficulty switch
+            {
+                Difficulty.Easy => 2,
+                Difficulty.Medium => 4,
+                Difficulty.Hard => 4,
+                Difficulty.Extreme => 6,
+                _ => 4
+            };
+        }
+
         return currentDifficulty switch
         {
             Difficulty.Easy => 2,
@@ -354,6 +445,18 @@ public class GameController : MonoBehaviour
 
     private int GetMaxColumns()
     {
+        if (currentMode == GameMode.Multiplayer)
+        {
+            return currentDifficulty switch
+            {
+                Difficulty.Easy => 5,
+                Difficulty.Medium => 6,
+                Difficulty.Hard => 6,
+                Difficulty.Extreme => 10,
+                _ => 6
+            };
+        }
+
         return currentDifficulty switch
         {
             Difficulty.Easy => 4,
@@ -378,6 +481,13 @@ public class GameController : MonoBehaviour
 
         winScreen.GetComponent<Animator>().SetInteger("WinState", 0);
         winScreen.GetComponent<Animator>().SetTrigger("Restart");
+
+        if (currentMode == GameMode.Multiplayer)
+        {
+            multiplayerScores.GetComponent<Animator>().SetInteger("Winner", -1);
+            multiplayerScores.GetComponent<Animator>().SetTrigger("Restart");
+            currentPlayer = 0;
+        }
     }
 
     public bool IsInputLocked()
@@ -414,6 +524,12 @@ public class GameController : MonoBehaviour
 
     private void UpdateStatsUI()
     {
+        if (currentMode == GameMode.Multiplayer)
+        {
+            primaryResultText.text = primaryScoreText.text;
+            secondaryResultText.text = secondaryScoreText.text;
+        }
+
         timeStatsValue.text = FormatTime(elapsedTime);
         scoreStatsValue.text = score.ToString();
         movesStatsValue.text = movesText.text;
@@ -516,9 +632,126 @@ public class GameController : MonoBehaviour
 
         PlayerPrefs.SetInt(key, played + 1);
     }
+
+    public void SetupModeUI()
+    {
+        bool isMulti = currentMode == GameMode.Multiplayer;
+
+        foreach (GameObject obj in multiplayerContainer)
+            obj.SetActive(isMulti);
+
+        foreach (GameObject obj in singleplayerContainer)
+            obj.SetActive(!isMulti);
+
+        if (isMulti)
+        {
+            scores[0] = 0;
+            scores[1] = 0;
+            UpdateScoreUI();
+            UpdateTurnUI();
+            surrenderButton.SetActive(false);
+        }
+    }
+
+    private void SwitchPlayer()
+    {
+        currentPlayer = 1 - currentPlayer;
+        UpdateTurnUI();
+        UpdateSurrenderButton();
+    }
+
+    private void UpdateScoreUI()
+    {
+        primaryScoreText.text = scores[0].ToString();
+        secondaryScoreText.text = scores[1].ToString();
+    }
+
+    private void UpdateTurnUI()
+    {
+        primaryScoreText.alpha = currentPlayer == 0 ? 1f : 0.5f;
+        secondaryScoreText.alpha = currentPlayer == 1 ? 1f : 0.5f;
+
+        primaryScoreText.transform.localScale = currentPlayer == 0 ? Vector3.one * 1.1f : Vector3.one;
+        secondaryScoreText.transform.localScale = currentPlayer == 1 ? Vector3.one * 1.1f : Vector3.one;
+
+        primaryTurnSelector.SetActive(currentPlayer == 0);
+        secondaryTurnSelector.SetActive(currentPlayer == 1);
+    }
+
+    public void SetCurrentMode(int mode)
+    {
+        currentMode = mode switch
+        {
+            1 => GameMode.Singleplayer,
+            2 => GameMode.Multiplayer,
+            _ => GameMode.Singleplayer
+        };
+
+        SetupModeUI();
+    }
+
+    public void Surrender()
+    {
+        if (hasGameEnded) return;
+
+        isInputLocked = true;
+        timerRunning = false;
+
+        winner = scores[0] > scores[1] ? 0 : 1;
+
+        StartCoroutine(EndGameEarly());
+    }
+
+    private IEnumerator EndGameEarly()
+    {
+        foreach (Transform child in cardGrid)
+        {
+            Card card = child.GetComponent<Card>();
+
+            if (!card.GetIsRevealed())
+            {
+                card.RevealInstant();
+                yield return new WaitForSeconds(0.25f);
+
+            }
+        }
+
+        SFXManager.Instance.PlayFlip();
+        yield return new WaitForSeconds(1f);
+
+        hasGameEnded = true;
+        UpdateStatsUI();
+
+        string keyWinner = winner == 0 ? "primary_wins" : "secondary_wins";
+        winnerText.text = LocalizationController.Instance.Get(keyWinner);
+
+        winScreen.GetComponent<Animator>().SetInteger("WinState", 1);
+        multiplayerScores.GetComponent<Animator>().SetInteger("Winner", winner);
+
+        SFXManager.Instance.PlayVictory();
+        UIController.Instance.SetCurrentPanel(PanelType.EndGame);
+    }
+
+    private void UpdateSurrenderButton()
+    {
+        if (currentMode != GameMode.Multiplayer)
+        {
+            surrenderButton.SetActive(false);
+            return;
+        }
+
+        bool isLoserTurn = scores[1 - currentPlayer] >= winCondition;
+
+        surrenderButton.SetActive(isLoserTurn && !hasGameEnded);
+    }
 }
 
 public enum Difficulty
 {
     Easy, Medium, Hard, Extreme
+}
+
+public enum GameMode
+{
+    Singleplayer, Multiplayer
 }

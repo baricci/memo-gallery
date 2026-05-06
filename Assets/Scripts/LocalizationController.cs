@@ -75,7 +75,7 @@ public class LocalizationController : MonoBehaviour
         {"moves", "Moves"},
         {"new_record", "New Record!"},
         {"replay", "Replay"},
-        {"change", "Change"},
+        {"menu", "Menu"},
         {"help", "Help"},
         {"how_to_play", "How To Play"},
         {"how_to_play_description", "Flip two cards at a time.\r\nIf they match, they stay open.\r\nFind all pairs to win."},
@@ -119,7 +119,21 @@ public class LocalizationController : MonoBehaviour
         {"exit_description", "Are you sure you want to quit?"},
         {"no", "No"},
         {"yes", "Yes"},
-        {"thanks_for_playing!", "Thanks for playing!"}
+        {"thanks_for_playing!", "Thanks for playing!"},
+        {"select_mode", "Select Mode" },
+        {"5_pairs", "5\r\npairs"},
+        {"9_pairs", "9\r\npairs"},
+        {"15_pairs", "15\r\npairs"},
+        {"25_pairs", "25\r\npairs"},
+        {"classic", "Classic" },
+        {"quiz", "Quiz" },
+        {"solo", "Solo" },
+        {"coming_soon", "Coming Soon..." },
+        {"primary_wins", "Primary Colors\r\nWins!"},
+        {"secondary_wins", "Secondary Colors\r\nWins!"},
+        {"quit_the_game?", "Quit the Game?"},
+        {"restart_the_game?", "Restart the Game?"},
+        {"surrender", "Surrender"}
     };
 
     private Dictionary<string, string> italiano = new()
@@ -141,7 +155,7 @@ public class LocalizationController : MonoBehaviour
         {"moves", "Mosse"},
         {"new_record", "Nuovo Record!"},
         {"replay", "Rigioca"},
-        {"change", "Cambia"},
+        {"menu", "Menù"},
         {"help", "Aiuto"},
         {"how_to_play", "Come Giocare"},
         {"how_to_play_description", "Gira due carte alla volta.\r\nSe uguali, restano scoperte.\r\nTrova le coppie per vincere."},
@@ -185,7 +199,21 @@ public class LocalizationController : MonoBehaviour
         {"exit_description", "Sei sicuro di voler abbandonare?"},
         {"no", "No"},
         {"yes", "Sì"},
-        {"thanks_for_playing!", "Grazie per aver giocato!"}
+        {"thanks_for_playing!", "Grazie per aver giocato!"},
+        {"select_mode", "Selezione Modalità" },
+        {"5_pairs", "5\r\ncoppie"},
+        {"9_pairs", "9\r\ncoppie"},
+        {"15_pairs", "15\r\ncoppie"},
+        {"25_pairs", "25\r\ncoppie"},
+        {"classic", "Classica" },
+        {"quiz", "Quiz" },
+        {"solo", "Solo" },
+        {"coming_soon", "A Breve..." },
+        {"primary_wins", "Colori Primari\r\nVincono!"},
+        {"secondary_wins", "Colori Secondari\r\nVincono!"},
+        {"quit_the_game?", "Abbandonare la Partita?"},
+        {"restart_the_game?", "Ricominciare la Partita?"},
+        {"surrender", "Resa"}
     };
 
     private Dictionary<string, string> espanol = new()
@@ -207,7 +235,7 @@ public class LocalizationController : MonoBehaviour
         {"moves", "Movimientos"},
         {"new_record", "¡Nuevo Récord!"},
         {"replay", "Rejugar"},
-        {"change", "Cambiar"},
+        {"menu", "Menú"},
         {"help", "Ayuda"},
         {"how_to_play", "Cómo Jugar"},
         {"how_to_play_description", "Gira dos cartas cada vez.\r\nSi coinciden, quedan abiertas.\r\nEncuentra las parejas para ganar."},
@@ -251,7 +279,21 @@ public class LocalizationController : MonoBehaviour
         {"exit_description", "¿Seguro que quieres salir?"},
         {"no", "No"},
         {"yes", "Sí"},
-        {"thanks_for_playing!", "¡Gracias por jugar!"}
+        {"thanks_for_playing!", "¡Gracias por jugar!"},
+        {"select_mode", "Selección Modo" },
+        {"5_pairs", "5\r\npares"},
+        {"9_pairs", "9\r\npares"},
+        {"15_pairs", "15\r\npares"},
+        {"25_pairs", "25\r\npares"},
+        {"classic", "Clásico" },
+        {"quiz", "Quiz" },
+        {"solo", "Solo" },
+        {"coming_soon", "Próximamente..." },
+        {"primary_wins", "Colores Primarios\r\nGanan!"},
+        {"secondary_wins", "Colores Secundarios\r\nGanan!"},
+        {"quit_the_game?", "¿Salir el juego?"},
+        {"restart_the_game?", "¿Reiniciar el juego?"},
+        {"surrender", "Rendirse"}
     };
 
     private Dictionary<string, string> francais = new()
@@ -273,7 +315,7 @@ public class LocalizationController : MonoBehaviour
         {"moves", "Coups"},
         {"new_record", "Nouveau Record!"},
         {"replay", "Rejouer"},
-        {"change", "Changer"},
+        {"menu", "Menu"},
         {"help", "Aide"},
         {"how_to_play", "Comment Jouer"},
         {"how_to_play_description", "Retourne deux cartes.\r\nSi identiques, restent visibles.\r\nTrouve les paires pour gagner."},
@@ -317,7 +359,21 @@ public class LocalizationController : MonoBehaviour
         {"exit_description", "Veux-tu vraiment quitter?"},
         {"no", "Non"},
         {"yes", "Oui"},
-        {"thanks_for_playing!", "Merci d'avoir joué!"}
+        {"thanks_for_playing!", "Merci d'avoir joué!"},
+        {"select_mode", "Sélection Mode" },
+        {"5_pairs", "5\r\npaires"},
+        {"9_pairs", "9\r\npaires"},
+        {"15_pairs", "15\r\npaires"},
+        {"25_pairs", "25\r\npaires"},
+        {"classic", "Classique" },
+        {"quiz", "Quiz" },
+        {"solo", "Solo" },
+        {"coming_soon", "Bientôt..." },
+        {"primary_wins", "Couleurs Primaires\r\nGagnent!"},
+        {"secondary_wins", "Couleurs Secondaires\r\nGagnent!"},
+        {"quit_the_game?", "Quitter la Partie?"},
+        {"restart_the_game?", "Redémarrer la Partie?"},
+        {"surrender", "Se Rendre"}
     };
 
     private Dictionary<string, string> portugues = new()
@@ -339,7 +395,7 @@ public class LocalizationController : MonoBehaviour
         {"moves", "Movimentos"},
         {"new_record", "Novo Recorde!"},
         {"replay", "Rejogar"},
-        {"change", "Mudar"},
+        {"menu", "Menu"},
         {"help", "Ajuda"},
         {"how_to_play", "Como Jogar"},
         {"how_to_play_description", "Vire duas cartas.\r\nSe iguais, ficam abertas.\r\nEncontre os pares para vencer."},
@@ -383,7 +439,21 @@ public class LocalizationController : MonoBehaviour
         {"exit_description", "Tem certeza que quer sair?"},
         {"no", "Não"},
         {"yes", "Sim"},
-        {"thanks_for_playing!", "Obrigado por jogar!"}
+        {"thanks_for_playing!", "Obrigado por jogar!"},
+        {"select_mode", "Seleção Modo" },
+        {"5_pairs", "5\r\npares"},
+        {"9_pairs", "9\r\npares"},
+        {"15_pairs", "15\r\npares"},
+        {"25_pairs", "25\r\npares"},
+        {"classic", "Clássico" },
+        {"quiz", "Quiz" },
+        {"solo", "Solo" },
+        {"coming_soon", "Em breve..." },
+        {"primary_wins", "Cores Primárias\r\nVencem!"},
+        {"secondary_wins", "Cores Secundárias\r\nVencem!"},
+        {"quit_the_game?", "Reiniciar o jogo?"},
+        {"restart_the_game?", "Sair o jogo?"},
+        {"surrender", "Render"}
     };
 
     public void Register(LocalizedText text)

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c4904ff670dbb4c479bc41a38846072c
+guid: c0984ab6636b5c748a640a2f73b62884
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1828774149653016482
-    second: Dance-Matisse_0
+      213: 4248703306127651768
+    second: half_rounded_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dance-Matisse_0
+      name: half_rounded_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e50d383a993ee96e0800000000000000
-      internalID: -1828774149653016482
+      spriteID: 8b334c5752d66fa30800000000000000
+      internalID: 4248703306127651768
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Dance-Matisse_0: -1828774149653016482
+      half_rounded_0: 4248703306127651768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

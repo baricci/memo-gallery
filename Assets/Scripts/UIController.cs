@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
@@ -13,6 +14,13 @@ public class UIController : MonoBehaviour
     public GameObject splashPanel;
     public GameObject menuPanel;
     public GameObject helpPanel;
+    public GameObject modePanel;
+
+    [Header("UI Confirm Exit Pause")]
+    public GameObject quitContainer;
+    public GameObject restartContainer;
+    public Button noQuit;
+    public Button noRestart;
 
     private Animator exitAnimator;
 
@@ -52,6 +60,7 @@ public class UIController : MonoBehaviour
             case PanelType.Help:
             case PanelType.Settings:
             case PanelType.Menu:
+            case PanelType.Mode:
                 CloseCurrentPanel(); break;
             case PanelType.ResetConfirm:
                 CloseResetPanel(); break;
@@ -71,6 +80,12 @@ public class UIController : MonoBehaviour
     private void ClosePausePanel()
     {
         GameController.Instance.ResumeGame();
+
+        if (quitContainer.activeSelf)
+            noQuit.onClick.Invoke();
+
+        if (restartContainer.activeSelf)
+            noRestart.onClick.Invoke();
     }
 
     private void CloseCurrentPanel()
@@ -87,8 +102,12 @@ public class UIController : MonoBehaviour
                 SettingsController.Instance.ToggleSettings();
                 SetCurrentPanel(previousPanel); break;
             case PanelType.Menu:
-                splashPanel.SetActive(true);
+                modePanel.SetActive(true);
                 menuPanel.SetActive(false);
+                SetCurrentPanel(PanelType.Mode); break;
+            case PanelType.Mode:
+                splashPanel.SetActive(true);
+                modePanel.SetActive(false);
                 SetCurrentPanel(PanelType.Splash); break;
         }
     }
@@ -150,5 +169,6 @@ public class UIController : MonoBehaviour
 public enum PanelType
 {
     Splash, Menu, Game, EndGame, Pause,
-    Settings, Help, Stats, ResetConfirm, Exit
+    Settings, Help, Stats, ResetConfirm, Exit,
+    Mode
 }

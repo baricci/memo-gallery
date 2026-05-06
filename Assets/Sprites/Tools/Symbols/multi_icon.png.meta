@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1df6e6f5daa4a764f89e0bff504e1980
+guid: 269202a4daa5ccc4cb82dea84788ab82
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -226107433050666374
-    second: palette_coin_0
+      213: -1472006519941292718
+    second: multi_icon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 64
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: palette_coin_0
+      name: multi_icon_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 3
-        width: 122
-        height: 122
+        x: 0
+        y: 0
+        width: 64
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a7a80f3dc74bcdcf0800000000000000
-      internalID: -226107433050666374
+      spriteID: 25d17df7ed1629be0800000000000000
+      internalID: -1472006519941292718
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      palette_coin_0: -226107433050666374
+      multi_icon_0: -1472006519941292718
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

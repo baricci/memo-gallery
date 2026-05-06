@@ -60,4 +60,17 @@ public class Card : MonoBehaviour
         animator.Rebind();
         animator.Update(0f);
     }
+
+    public void RevealInstant()
+    {
+        if (isRevealed) return;
+
+        isRevealed = true;
+        animator.SetTrigger("Flip");
+    }
+
+    public bool GetIsRevealed()
+    {
+        return isRevealed;
+    }
 }
