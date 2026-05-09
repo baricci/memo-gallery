@@ -5,17 +5,22 @@
 [Bb]uilds/
 [Ll]ogs/
 UserSettings/
+_Recovery/
+ignore.conf
 
 .vs/
+.vsconfig
+.plastic/
+.gradle/
+.utmp/
+
 *.csproj
 *.unityproj
 *.sln
+*.slnx
 *.suo
 *.tmp
 *.user
 *.userprefs
 *.pidb
 *.booproj
-
-.utmp/
-.gradle/
